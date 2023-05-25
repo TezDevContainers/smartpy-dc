@@ -12,7 +12,8 @@ code . #Opens the folder in VSCode
 
 2. Make sure you have Docker Engine (Docker CLI tool) or Docker Desktop installed and *running* 
 
-3. Choose between a local or remote devcontainer, and follow only the corresponding instructions (3a or 3b. Click the arrow to expand the instructions)
+3. Choose between a local or remote devcontainer, and follow only the corresponding instructions:
+
 - 3a. Local DevContainer option
     1. Install the VSCode Dev Containers extension
     2. Open the VSCode command pallette, and select Dev Containers: Reopen in Container
