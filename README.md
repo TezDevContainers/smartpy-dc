@@ -1,14 +1,14 @@
 # smartPyDC
 
 ## Setup
-1. Fork your own copy of this repo.
+1. Fork your own copy of this repo into your own account
 
 2. Choose between running a local devcontainer (preferred) or a remote devcontainer (with github codespaces), and follow only the corresponding instructions:
 
 - 2a. **Local option**
     1. Clone the repo onto your local machine 
    ```bash
-    git clone [https://github.com/YOUR-GITHUB-NAME-HERE/tutorial.git](https://github.com/grum-tez/smartPyDC.git)
+    git clone https://github.com/YOUR-GITHUB-NAME-HERE/tutorial.git
     cd tutorial
     code . #Opens the folder in VSCode
     ```
