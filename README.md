@@ -26,8 +26,8 @@ macOS: ⇧⌘P
 Try it out - search for "View: Toggle Terminal" in the command palette. Notice that the keyboard shortcut for *Toggle Terminal* appears alongside the command. 
 
 **Toggle Terminal keyboard shortcuts:**
-Windows/Linux: Ctrl + `
-macOS: ^` (control + backtick)
+Windows/Linux: Ctrl + \`
+macOS: ^\` (control + backtick)
 
 This is another shortcut worth remembering!
 
@@ -103,15 +103,15 @@ You now have everything you need to complete the tutorial exercises within your 
 
 ## Optional: Connect to your own fork of the tutorial repository
 
-In the Activity Bar, click the Source Control view.
+In the Activity Bar, click the Source Control view. IMAGE
 
-To stage your changes, click the + symbol on the line next to the word changes (it appears when you mouseover the word *changes*)
+To stage your changes, click the + symbol on the line next to the word changes (it appears when you mouseover the word *changes*) IMAGE
 
-To commit your staged changes, type a commit message describing the change you've made, then click Commit.
+To commit your staged changes, type a commit message describing the change you've made, then click Commit. IMAGE
 
-Click Publish Branch
+Click Publish Branch IMAGE
 
-In the "Repository Name" dropdown, type a name for your new repository, then select Publish to GitHub private repository or Publish to GitHub public repository.
+In the "Repository Name" dropdown, type a name for your new repository, then select Publish to GitHub private repository or Publish to GitHub public repository. IMAGE
 
 ## Next steps
 
@@ -122,11 +122,9 @@ You can now choose to either complete the tutorials with a remote setup (via a c
 
 We recommend the **Remote Option** if:
 
-- you want to start learning SmartPy *right now*
-- you want to save 20 minutes
+- you want to start learning SmartPy *right now* and save 10-20 minutes
 - you don't want to use version control (add, commit, push etc) during tutorials
-- you don't care about saving your work for future reference
-- you don't care if your work is automatically deleted if inactive for 30 days
+- you don't mind if your work is automatically deleted if inactive for 30 days
 - you don't want to install prerequisites on your machine (i.e docker, vscode)
 
 We recommend the **Local Option** if:
@@ -138,7 +136,7 @@ We recommend the **Local Option** if:
 - you don't want to be dependent on codespaces
 - you want to save your free codespaces hours for other uses (you have 60 free hours per month)
 
-To choose the **Remote Option**: Follow this Link to the first tutorial.
+To choose the **Remote Option**: Follow this LINK to the first tutorial.
 
 To choose the **Local Option**, simply continue to follow along with this readme.
 
@@ -162,7 +160,7 @@ Click on *Code*, then under the *local* tab, copy the HTTPS git address of the r
 
 Open a terminal window and navigate to an appropriate folder for this repo.
 
-Type `git clone` followed by a space and then paste the previously copied git address. You will end up with something like this: 
+Type `git clone` followed by a space and then paste the previously copied git address. You will end up with something like this command: 
 
   ```bash
    git clone https://github.com/YOUR-GITHUB-NAME-HERE/smartPyDC.git
