@@ -3,11 +3,12 @@
   "image": "mcr.microsoft.com/devcontainers/python",
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  "forwardPorts": [5000],
+  // "forwardPorts": [3000],
 
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   },
-  "postCreateCommand": "chmod +x .devcontainer/postCreate.sh && .devcontainer/postCreate.sh",
-  "remoteUser": "vscode"
+  // Uncomment the postCreateCommand property below to pre-install tezos client, if required
+  // "postCreateCommand": "chmod +x .devcontainer/postCreate.sh && .devcontainer/postCreate.sh",
+  "remoteUser": "learner"
 }
