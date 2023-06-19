@@ -15,5 +15,6 @@
     "ghcr.io/devcontainers/features/python",
     "ghcr.io/grum-tez/features_template/octez-client-installer"
   ],
+  "postCreateCommand": "chmod +x .devcontainer/postCreate.sh && .devcontainer/postCreate.sh",
   "forwardPorts": [3000, 20000]
 }
