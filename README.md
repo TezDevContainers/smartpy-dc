@@ -12,7 +12,10 @@ This will clone a copy of the template repository to a remote server (a 'codespa
 
 Your codespace should now be up and running. Everything you need to complete the tutorial, including smartpy, is pre-installed.
 
-## The Command Palette
+## Visual Studio Code
+If you are new to Visual Studio Code, here are a few shortcuts and hints to help you to orient yourself
+
+### The Command Palette
 The Command Palette is a searchable menu that provides access to many commands in VS Code. To open it, click the gear icon in the bottom left hand corner of the screen, and select *Command Palette*.
 
 You will use the Command Palette often enough that it is well worth learning the keyboard shortcut!
@@ -29,29 +32,29 @@ macOS: ^\` (control + backtick)
 
 This is another shortcut worth remembering!
 
-## The .devcontainer folder
+### The .devcontainer folder
 
-You will notice your workspace contains a single folder called ".devcontainer". This contains configuration files which allow the repo to run in a "Development Container" which keeps the development environment constant across systems. Unless you are an advanced user, leave these files alone.
+You will notice your workspace contains a single folder called ".devcontainer". This contains configuration files which allow the repo to run in a "Development Container". This keeps the development environment constant across systems. This will become really helpful in the future for sharing your repo with others and allowing others to reproduce bugs you are trying to fix. For now, just leave these files alone.
 
-## Optional: using Codespaces with your local version of VSCode
+### Optional: using Codespaces with your local version of VSCode
 
 If you are familiar with VSCode and wish to use your natively-installed VSCode instead of an in-browser instance, open the command palette and select "Codespaces: Open in VS Code Desktop". 
 
-## Optional: Connect to your own fork of the tutorial repository
+### Optional: Connect to your own fork of the tutorial repository
 
-In the Activity Bar, click the Source Control view. IMAGE
+In the Activity Bar, click the Source Control view.
 
-To stage your changes, click the + symbol on the line next to the word changes (it appears when you mouseover the word *changes*) IMAGE
+To stage your changes, click the + symbol on the line next to the word changes (it appears when you mouseover the word *changes*)
 
-To commit your staged changes, type a commit message describing the change you've made, then click Commit. IMAGE
+To commit your staged changes, type a commit message describing the change you've made, then click Commit.
 
-Click Publish Branch IMAGE
+Click Publish Branch.
 
-In the "Repository Name" dropdown, type a name for your new repository, then select Publish to GitHub private repository or Publish to GitHub public repository. IMAGE
+In the "Repository Name" dropdown, type a name for your new repository, then select Publish to GitHub private repository or Publish to GitHub public repository.
 
 ## Next steps
 
-You can now choose to either complete the tutorials with a remote setup (via a codespaces server) or a local devcontainer setup (on your own computer)
+You can now choose to either complete the tutorials with a remote setup (via a codespaces server) or a local devcontainer setup (on your own computer).
 
 **Remote Option**: Skip the rest of this readme and complete the tutorials in your new codespace, using the in-browser Visual Studio Code
 **Local Option**: Create your own fork of the repo and complete the tutorials in your local instance of Visual Studio Code
@@ -72,17 +75,18 @@ We recommend the **Local Option** if:
 - you want to save your free codespaces hours for other uses (you have 60 free hours per month)
 - you've got a powerful machine and want the smoothest possible user experience.
 
-To choose the **Remote Option**: Follow this LINK to the first tutorial.
+To choose the **Remote Option**: Close this readme and move onto the first exercise of the tutorials.
 
-To choose the **Local Option**, simply continue to follow along with this readme.
+To choose the **Local Option**, simply continue to follow along:
 
 ## Local Option
 
 ### Prerequisites
 
-- Install Docker Desktop. (LINK) Make sure it is *running*. If you restart your machine, you may have to remember to reopen it.
+- Install [Docker Desktop](https://www.docker.com/products/docker-desktop/). If you are on 2021 or later Apple machine, you may have to select the "apple chip" download option. 
+Make sure Docker is installed *and running*. If you restart your machine, you may have to remember to reopen it.
 
-- Install Visual Studio Code. (LINK) Make sure you are logged in with your github credentials. You can check by clicking on the icon of the portrait on the bottom left. IMAGE
+- Install [Visual Studio Code](https://code.visualstudio.com/download). Make sure you are logged in with your github credentials. You can check by clicking on the icon of the portrait on the bottom left of the vscode window.
 
 - Install the Visual Studio Code "Dev Containers" extension 
 
@@ -102,4 +106,6 @@ A VSCode window will open in a local container volume. This volume will persist,
 
 For example, if you enter `git remote -v` into the terminal, you will see the address of your fork of the repository. This means you can add, commit and push your work as though you were working from a local repository without any further setup (which we recommend you do).
 
+### Troubleshooting
 
+If your devcontainer volume in VSCode won't open, reopen Docker Desktop and try again.
