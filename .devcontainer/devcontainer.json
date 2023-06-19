@@ -1,14 +1,19 @@
 {
-  "name": "Python Base devcontainer",
-  "image": "mcr.microsoft.com/devcontainers/python",
-
-  // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  // "forwardPorts": [3000],
-
+  "name": "Jammy",
+  "image": "mcr.microsoft.com/devcontainers/base:jammy",
   "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    "ghcr.io/devcontainers/features/common-utils:2": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers/features/python:1": {},
+    "ghcr.io/grum-tez/features_template/octez-client-installer:latest": {}
   },
-  // Uncomment the postCreateCommand property below to pre-install tezos client, if required
-  // "postCreateCommand": "chmod +x .devcontainer/postCreate.sh && .devcontainer/postCreate.sh",
-  "remoteUser": "learner"
+  "overrideFeatureInstallOrder": [
+    "ghcr.io/devcontainers/features/common-utils",
+    "ghcr.io/devcontainers/features/docker-in-docker",
+    "ghcr.io/devcontainers/features/node",
+    "ghcr.io/devcontainers/features/python",
+    "ghcr.io/grum-tez/features_template/octez-client-installer"
+  ],
+  "forwardPorts": [3000, 20000]
 }
