@@ -58,9 +58,13 @@ On the other hand, if you are happy to work in the browser or don't want to inst
 
 If you are familiar with using git and would like to add and commit your changes to a github repository, follow the instructions below. You can complete the Smartypy tutorial without doing this - however be aware that by default your work in the codespace will be automatically deleted after 30 days of inactivity. 
 
-In the Activity Bar, click the Source Control view.
+In the Activity Bar on the left hand side of the screen, click the Source Control view.
 
-To stage your changes, click the + symbol on the line next to the word changes (it appears when you mouseover the word *changes*)
+![A screengrab of the VSCode interface highlighting the source control view icon](/images/SourceControlView.png)
+
+A change was made to the folder as part of the devcontainer setup - the 'smartpy' script was downloaded. To stage this change, click the + symbol on the line next to the word changes (it appears when you mouseover the word *changes*)
+
+![A screengrab of the VScode interface highlighting the 'add all changes' icon in the source control view](/images/addChange.png)
 
 To commit your staged changes, type a commit message describing the change you've made, then click Commit.
 
