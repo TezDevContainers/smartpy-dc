@@ -15,7 +15,7 @@ More advanced users may wish to continue through the advanced section of setup g
   * [Introduction](#introduction)
   * [Table of Contents](#table-of-contents)
   * [How to create a codespace](#how-to-create-a-codespace)
-  * [Visual Studio Code](#visual-studio-code)
+  * [Orientation](#orientation)
     + [The Command Palette](#the-command-palette)
     + [Exiting your codespace](#exiting-your-codespace)
     + [Reconnecting to your codespace](#reconnecting-to-your-codespace)
@@ -40,7 +40,7 @@ This will clone a copy of the template repository to a remote server (a 'codespa
 
 Your codespace should now be up and running. Everything you need to complete the tutorial, including smartPy, is pre-installed.
 
-## Visual Studio Code
+## Orientation
 If you are new to Visual Studio Code, here are a few shortcuts and hints to help you to orient yourself
 
 ### The Command Palette
