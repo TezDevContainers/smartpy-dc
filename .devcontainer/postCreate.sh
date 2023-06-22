@@ -1,3 +1,5 @@
 #!/bin/sh
-wget smartpy.io/smartpy
-chmod a+x smartpy
+if [ ! -f smartpy ]; then
+    wget smartpy.io/smartpy
+    chmod a+x smartpy
+fi

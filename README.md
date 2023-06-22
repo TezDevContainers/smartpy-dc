@@ -8,7 +8,7 @@ This purpose of this repo is to allow you to set up a working smartpy environmen
 2. Navigate to https://github.com/grum-tez/smartPyDC
 3. Click _Use this template_, then click _Open in a codespace_.
 
-![Image of github website with 'Use this Template' leading to a dropdown with 'Open in codespace'](images/useThisTemplate.png)
+![Partial screengrab of Github website with 'Use this Template' leading to a dropdown with 'Open in codespace'](images/useThisTemplate.png)
 
 This will clone a copy of the template repository to a remote server (a 'codespace'). When the codespace is created, an in-browser version of Visual Studio Code will provide you access to the repository.
 
@@ -18,7 +18,9 @@ Your codespace should now be up and running. Everything you need to complete the
 If you are new to Visual Studio Code, here are a few shortcuts and hints to help you to orient yourself
 
 ### The Command Palette
-The Command Palette is a searchable menu that provides access to many commands in VS Code. To open it, click the gear icon in the bottom left hand corner of the screen, and select *Command Palette*.
+The Command Palette is a searchable menu that provides access to many commands in VS Code. To open it, click the gear icon in the bottom left hand corner of the screen and select *Command Palette*.
+
+![Partial screen grab of the VSCode interface, focusing on command palette in settings menu'](images/openCommandPalette.png)
 
 You will use the Command Palette often enough that it is well worth learning the keyboard shortcut!
 
@@ -26,7 +28,9 @@ You will use the Command Palette often enough that it is well worth learning the
 Windows/Linux: Ctrl + Shift + P
 macOS: ⇧⌘P
 
-Try it out - search for "View: Toggle Terminal" in the command palette. Notice that the keyboard shortcut for *Toggle Terminal* appears alongside the command. 
+Try it out - search for "View: Toggle Terminal" in the command palette. Notice that the keyboard shortcut for *Toggle Terminal* appears alongside the command.
+
+![A screengrab of the Command Palette Search Bar](images/commandPaletteSearch.png)
 
 **Toggle Terminal keyboard shortcuts:**
 Windows/Linux: Ctrl + \`
@@ -36,13 +40,23 @@ This is another shortcut worth remembering!
 
 ### The .devcontainer folder
 
-You will notice your workspace contains a single folder called ".devcontainer". This contains configuration files which allow the repo to run in a "Development Container". This keeps the development environment constant across systems. This will helpful in the future for sharing and communicating with others. The devcontainer allows you to share your repo and the development environment you are working in. This means your code will work more consistently across machines, and it will be easier for others to reproduce the bugs when you need help. For now, just leave the files in the .devcontainer folder alone.
+You will notice your workspace contains a single folder called ".devcontainer".
 
-### Optional: using Codespaces with your local version of VSCode
+![A screengrab of the VSCode explorer, showing the .devcontainer folder and its contents](/images/devcontainerExplorer.png)
+
+ This contains configuration files which allow the repo to run in a "Development Container". This keeps the development environment constant across systems. This will helpful in the future for sharing and communicating with others. The devcontainer allows you to share your repo and the development environment you are working in. This means your code will work more consistently across machines, and it will be easier for others to reproduce the bugs when you need help. For now, just leave the files in the .devcontainer folder alone.
+
+### How to use Codespaces with your local version of VSCode
 
 If you are familiar with VSCode and wish to use your natively-installed VSCode instead of an in-browser instance, open the command palette and select "Codespaces: Open in VS Code Desktop". 
 
-### Optional: Connect to your own fork of the tutorial repository
+![A screengrab of the command palette with an arrow indicating the "Open in VS Code Desktop option"](/images/openVSCodeDesktop.png)
+
+On the other hand, if you are happy to work in the browser or don't want to install VSCode, you can safely skip this.
+
+### How to connect to your own fork of the tutorial repository
+
+If you are familiar with using git and would like to add and commit your changes to a github repository, follow the instructions below. You can complete the Smartypy tutorial without doing this - however be aware that by default your work in the codespace will be automatically deleted after 30 days of inactivity. 
 
 In the Activity Bar, click the Source Control view.
 
