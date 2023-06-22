@@ -56,7 +56,7 @@ On the other hand, if you are happy to work in the browser or don't want to inst
 
 ### How to connect to your own fork of the tutorial repository
 
-If you are familiar with using git and would like to add and commit your changes to a github repository, follow the instructions below. You can complete the Smartypy tutorial without doing this - however be aware that by default your work in the codespace will be automatically deleted after 30 days of inactivity. 
+If you are familiar with using git and would like to add and commit your changes to a github repository, follow the instructions below. You can complete the Smartypy tutorial without creating your own fork - however be aware that by default your work in the codespace will be automatically deleted after 30 days of inactivity. 
 
 In the Activity Bar on the left hand side of the screen, click the Source Control view.
 
@@ -66,66 +66,96 @@ A change was made to the folder as part of the devcontainer setup - the 'smartpy
 
 ![A screengrab of the VScode interface highlighting the 'add all changes' icon in the source control view](/images/addChange.png)
 
-To commit your staged changes, type a commit message describing the change you've made, then click Commit.
+To commit your staged changes, type a commit message, for example "initial commit", and then click Commit.
+
+![A screengrab of the VScode interface highlighting the 'Add message' text input and the 'commit' button](/images/commitChanges.png)
 
 Click Publish Branch.
 
-In the "Repository Name" dropdown, type a name for your new repository, then select Publish to GitHub private repository or Publish to GitHub public repository.
+![A screengrab of the VScode interface highlighting the 'Publish Branch' button](/images/publishBranch.png)
 
-## Next steps
+In the "Repository Name" dropdown, leave the default repo name as 'smartPyDC', and then select 'Publish to GitHub public repository'.
 
-You can now choose to either complete the tutorials with a remote setup (via a codespaces server) or a local devcontainer setup (on your own computer).
+![A screengrab of the VScode command palette highlighting the 'Publish to GitHub public repository' option](/images/publishBranch.png)
 
-**Remote Option**: Skip the rest of this readme and complete the tutorials in your new codespace, using the in-browser Visual Studio Code
-**Local Option**: Create your own fork of the repo and complete the tutorials in your local instance of Visual Studio Code
+### Next steps
 
-We recommend the **Remote Option** if:
+Whether or not you chose to continue in your browser or to set up a github fork, you are now ready to complete the tutorial in a Codespaces environment. 
 
-- you want to start learning SmartPy *right now* and save 10-20 minutes
-- you don't mind if your work is automatically deleted if inactive for 30 days
-- you don't want to install prerequisites on your machine (i.e docker, vscode)
-- you can't spare 2 gb of hard drive space.
-- you don't have an especially powerful machine. This might mean the experience on codespaces will similar (or even better) than your local machine.
+If you are a relative beginner to development, don't know what a container is, or are simply impatient to get started, we recommend moving directly on to the tutorial by following the link below:
 
-We recommend the **Local Option** if:
+[Take me to the tutorial...]("https://www.lipsum.com/")
 
-- you want to _learn_ in the same environment in which you will _build_
+## Advanced option: Local devcontainer
+
+If you are an advanced user you may wish to continue with the instructions below to set up your environment in a local container. This means you will run your code on your local machine rather than in remote codespace.
+
+This might be a good option for you if:
+
 - you plan to transition directly from learning SmartPy to building with it
+- you want to _learn_ in the same environment in which you will _build_ (and codespaces isn't your preferred development environment!)
 - you don't want to be dependent on codespaces
-- you want to save your free codespaces hours for other uses (you have 60 free hours per month)
-- you've got a powerful machine and want the smoothest possible user experience.
-
-To choose the **Remote Option**: Close this readme and move onto the first exercise of the tutorials.
-
-To choose the **Local Option**, simply continue to follow along:
-
-## Local Option
+- you want to save your free codespaces hours for other uses (you have 60 free CPU hours per month)
+- you've got a powerful machine and want to take advantage of it to get the smoothest possible development experience
+- you either know something about containers and docker already, or you are happy to learn how to use them going forward (so you can manage containers and volumes on your machine)
+- you have a reasonable amount of hard drive space (each local container / volume you set up will take up 2gb)
 
 ### Prerequisites
 
-- Install [Docker Desktop](https://www.docker.com/products/docker-desktop/). If you are on 2021 or later Apple machine, you may have to select the "apple chip" download option. 
-Make sure Docker is installed *and running*. If you restart your machine, you may have to remember to reopen it.
+- Install [Docker Desktop](https://www.docker.com/products/docker-desktop/). 
+  - If you are on 2021 or later Apple machine, you may have to select the "apple chip" download option. 
+  - Make sure Docker is installed *and running*. If you restart your machine, you may have to remember to reopen it.
 
-- Install [Visual Studio Code](https://code.visualstudio.com/download). Make sure you are logged in with your github credentials. You can check by clicking on the icon of the portrait on the bottom left of the vscode window.
 
-- Install the Visual Studio Code "Dev Containers" extension 
+- Install [Visual Studio Code](https://code.visualstudio.com/download). 
+  - Make sure you are logged in with your github credentials. You can check by clicking on the icon of the portrait on the bottom left of the vscode window.
 
-### Clone your repo into a local volume.
+- Install the Visual Studio Code "Dev Containers" extension
+  - You might find this extension has already been installed.
 
-First, complete the earlier section titled **Optional: Connect to your own fork of the tutorial repository** (if you haven't already done so). Alternatively you can create your own fork of the repository with the github interface.
+- You must create a fork of the repo in your github account (if you have not already done so as part of [previous instructions](#how-to-connect-to-your-own-fork-of-the-tutorial-repository)
+)
+
+### Instructions
+
+1. Open VS Code. If you are connected to a remote machine, you will need to close the connection first.
+
+For example, if you are currently connected to a codespace, you will see this in the bottom left corner of your VS Code window:
+
+![A screengrab of the VScode interface highlighting the 'Codespaces connected' tab](/images/CodespaceConnected.png)
+
+To close it, click on the word 'codespaces'. This will open the command palette. Select "close remote connection"
+
+![A screengrab of the VScode command palette highlighting the 'close remote connection' option](/images/closeRemoteConnection.png)
+
+If you see only this at the bottom left of your vscode window ... 
+
+![A screengrab of the VScode interface highlighting that there is no current remote connection](/images/notConnected.png)
+
+... that means you are not connected to a remote and you can continue.
 
 Open the command palette and select "Clone Repository in Container Volume..."
 
-Select "Clone a repository from GitHub in a Container Volume..."
+2. Select "Clone a repository from GitHub in a Container Volume..."
 
-Select your fork of the smartPyDC repository.
+3. Select your fork of the smartPyDC repository.
 
-The prompt will ask you to choose a branch. Select "main".
+4. The prompt will ask you to choose a branch. Select "main".
 
-A VSCode window will open in a local container volume. This volume will persist, even if you turn off your computer, unless you delete the container using docker. However, notice that the vscode environment is already connected to your github repository.
+5. A VSCode window will open in a local container volume. 
 
-For example, if you enter `git remote -v` into the terminal, you will see the address of your fork of the repository. This means you can add, commit and push your work as though you were working from a local repository without any further setup (which we recommend you do).
+If this worked successfully, you will see this in the bottomo left of your window:
+
+![A screengrab of the VScode interface highlighting a connection to 'Dev Container: SmartPy Tutorial'](/images/notConnected.png)
+
+- You now have a local container running with a local volume on your machine.
+- This volume will persist on your hard drive until you manually delete the container using docker.
+- Your container is a git repo and already connected to your fork. You can confirm this by entering `git remote -v` in the terminal. This should show the address of your fork of the repo on github.
+
+You are now ready to continue with the tutorial in your local container.
+
+Note: The option of a container combined with a local volume provides the best performance. This comes at the cost of an increased use of hard drive space. If you opt to use a container but without a local volume, you may find that commands such as `yarn install` perform poorly.
 
 ### Troubleshooting
 
-If your devcontainer volume in VSCode won't open, reopen Docker Desktop and try again.
+If your devcontainer volume in VSCode won't open, reopen Docker Desktop, restart VSCode and try again.
