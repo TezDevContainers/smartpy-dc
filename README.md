@@ -36,7 +36,7 @@ This is another shortcut worth remembering!
 
 ### The .devcontainer folder
 
-You will notice your workspace contains a single folder called ".devcontainer". This contains configuration files which allow the repo to run in a "Development Container". This keeps the development environment constant across systems. This will become really helpful in the future for sharing your repo with others and allowing others to reproduce bugs you are trying to fix. For now, just leave these files alone.
+You will notice your workspace contains a single folder called ".devcontainer". This contains configuration files which allow the repo to run in a "Development Container". This keeps the development environment constant across systems. This will helpful in the future for sharing and communicating with others. The devcontainer allows you to share your repo and the development environment you are working in. This means your code will work more consistently across machines, and it will be easier for others to reproduce the bugs when you need help. For now, just leave the files in the .devcontainer folder alone.
 
 ### Optional: using Codespaces with your local version of VSCode
 
