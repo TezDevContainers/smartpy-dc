@@ -40,6 +40,30 @@ This will clone a copy of the template repository to a remote server (a 'codespa
 
 Your codespace should now be up and running. Everything you need to complete the tutorial, including smartPy, is pre-installed.
 
+## Visual Studio Code
+If you are new to Visual Studio Code, here are a few shortcuts and hints to help you to orient yourself
+
+### The Command Palette
+The Command Palette is a searchable menu that provides access to many commands in VS Code. To open it, click the gear icon in the bottom left hand corner of the screen and select *Command Palette*.
+
+![Partial screen grab of the VS Code interface, focusing on command palette in settings menu'](images/openCommandPalette.png)
+
+You will use the Command Palette often enough that it is well worth learning the keyboard shortcut!
+
+**Command Palette keyboard shortcuts:**
+Windows/Linux: Ctrl + Shift + P
+macOS: ⇧⌘P (Shift + Command + P)
+
+Try it out - search for "View: Toggle Terminal" in the command palette. Notice that the keyboard shortcut for *Toggle Terminal* appears alongside the command.
+
+![A screengrab of the Command Palette Search Bar](images/commandPaletteSearch.png)
+
+**Toggle Terminal keyboard shortcuts:**
+Windows/Linux: Ctrl + \`
+macOS: ^\` (control + backtick)
+
+This is another shortcut worth remembering!
+
 ### Exiting your codespace
 
 When you are finished working in your codespace, you should close your connection before you exit VS Code. This will prevent wastage of your 60 hour quota of weekly free codespace time.
@@ -81,30 +105,6 @@ To reconnect:
 ![A screengrab of the github codespaces web interface, showing a menu with the option 'Open in browser' highlighted](/images/codespace_list_menu2.png)
 
 This will return you to your codespace and work in progress.
-
-## Visual Studio Code
-If you are new to Visual Studio Code, here are a few shortcuts and hints to help you to orient yourself
-
-### The Command Palette
-The Command Palette is a searchable menu that provides access to many commands in VS Code. To open it, click the gear icon in the bottom left hand corner of the screen and select *Command Palette*.
-
-![Partial screen grab of the VS Code interface, focusing on command palette in settings menu'](images/openCommandPalette.png)
-
-You will use the Command Palette often enough that it is well worth learning the keyboard shortcut!
-
-**Command Palette keyboard shortcuts:**
-Windows/Linux: Ctrl + Shift + P
-macOS: ⇧⌘P (Shift + Command + P)
-
-Try it out - search for "View: Toggle Terminal" in the command palette. Notice that the keyboard shortcut for *Toggle Terminal* appears alongside the command.
-
-![A screengrab of the Command Palette Search Bar](images/commandPaletteSearch.png)
-
-**Toggle Terminal keyboard shortcuts:**
-Windows/Linux: Ctrl + \`
-macOS: ^\` (control + backtick)
-
-This is another shortcut worth remembering!
 
 ### The .devcontainer folder
 
