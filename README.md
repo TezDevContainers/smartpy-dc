@@ -1,6 +1,6 @@
 # smartPyDC
 
-This purpose of this repo is to allow you to set up a working smartpy environment with as little fuss as possible.
+The purpose of this repo is to allow you to set up a working smartPy environment with as little fuss as possible.
 
 ## Create a codespace
 
@@ -12,7 +12,7 @@ This purpose of this repo is to allow you to set up a working smartpy environmen
 
 This will clone a copy of the template repository to a remote server (a 'codespace'). When the codespace is created, an in-browser version of Visual Studio Code will provide you access to the repository.
 
-Your codespace should now be up and running. Everything you need to complete the tutorial, including smartpy, is pre-installed.
+Your codespace should now be up and running. Everything you need to complete the tutorial, including smartPy, is pre-installed.
 
 ## Visual Studio Code
 If you are new to Visual Studio Code, here are a few shortcuts and hints to help you to orient yourself
@@ -26,7 +26,7 @@ You will use the Command Palette often enough that it is well worth learning the
 
 **Command Palette keyboard shortcuts:**
 Windows/Linux: Ctrl + Shift + P
-macOS: ⇧⌘P
+macOS: ⇧⌘P (Shift + Command + P)
 
 Try it out - search for "View: Toggle Terminal" in the command palette. Notice that the keyboard shortcut for *Toggle Terminal* appears alongside the command.
 
@@ -58,23 +58,23 @@ On the other hand, if you are happy to work in the browser or don't want to inst
 
 If you are familiar with using git and would like to add and commit your changes to a github repository, follow the instructions below. You can complete the Smartypy tutorial without creating your own fork - however be aware that by default your work in the codespace will be automatically deleted after 30 days of inactivity. 
 
-In the Activity Bar on the left hand side of the screen, click the Source Control view.
+1. In the Activity Bar on the left hand side of the screen, click the Source Control view.
 
-![A screengrab of the VSCode interface highlighting the source control view icon](/images/SourceControlView.png)
+![A screengrab of the VSCode interface highlighting the source control view icon](/images/sourceControlView.png)
 
-A change was made to the folder as part of the devcontainer setup - the 'smartpy' script was downloaded. To stage this change, click the + symbol on the line next to the word changes (it appears when you mouseover the word *changes*)
+2. A change was made to the folder as part of the devcontainer setup - the 'smartPy' script was downloaded. To stage this change, click the + symbol on the line next to the word changes (it appears when you mouseover the word *changes*)
 
 ![A screengrab of the VScode interface highlighting the 'add all changes' icon in the source control view](/images/addChange.png)
 
-To commit your staged changes, type a commit message, for example "initial commit", and then click Commit.
+3. To commit your staged changes, type a commit message, for example "initial commit", and then click Commit.
 
 ![A screengrab of the VScode interface highlighting the 'Add message' text input and the 'commit' button](/images/commitChanges.png)
 
-Click Publish Branch.
+4. Click Publish Branch.
 
 ![A screengrab of the VScode interface highlighting the 'Publish Branch' button](/images/publishBranch.png)
 
-In the "Repository Name" dropdown, leave the default repo name as 'smartPyDC', and then select 'Publish to GitHub public repository'.
+5. In the "Repository Name" dropdown, leave the default repo name as 'smartPyDC', and then select 'Publish to GitHub public repository'.
 
 ![A screengrab of the VScode command palette highlighting the 'Publish to GitHub public repository' option](/images/publishBranch.png)
 
@@ -98,7 +98,7 @@ This might be a good option for you if:
 - you want to save your free codespaces hours for other uses (you have 60 free CPU hours per month)
 - you've got a powerful machine and want to take advantage of it to get the smoothest possible development experience
 - you either know something about containers and docker already, or you are happy to learn how to use them going forward (so you can manage containers and volumes on your machine)
-- you have a reasonable amount of hard drive space (each local container / volume you set up will take up 2gb)
+- you have a reasonable amount of hard drive space (each local container / volume you maintain will take up 2gb)
 
 ### Prerequisites
 
@@ -144,9 +144,9 @@ Open the command palette and select "Clone Repository in Container Volume..."
 
 5. A VSCode window will open in a local container volume. 
 
-If this worked successfully, you will see this in the bottomo left of your window:
+If this worked successfully, you will see this in the bottom left of your window:
 
-![A screengrab of the VScode interface highlighting a connection to 'Dev Container: SmartPy Tutorial'](/images/notConnected.png)
+![A screengrab of the VScode interface highlighting a connection to 'Dev Container: SmartPy Tutorial'](/images/DevContainerConnected.png)
 
 - You now have a local container running with a local volume on your machine.
 - This volume will persist on your hard drive until you manually delete the container using docker.
@@ -156,6 +156,11 @@ You are now ready to continue with the tutorial in your local container.
 
 Note: The option of a container combined with a local volume provides the best performance. This comes at the cost of an increased use of hard drive space. If you opt to use a container but without a local volume, you may find that commands such as `yarn install` perform poorly.
 
+You're done! You are ready to start the smartPy Tutorial
+
+[Take me to the tutorial...]("https://www.lipsum.com/")
+
 ### Troubleshooting
 
-If your devcontainer volume in VSCode won't open, reopen Docker Desktop, restart VSCode and try again.
+If you encounter issues where your devcontainer volume in VSCode won't open, try the following solution: reopen Docker Desktop, restart VSCode and try again.
+
