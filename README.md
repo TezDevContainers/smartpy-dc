@@ -14,11 +14,11 @@ More advanced users may wish to continue through the advanced section of setup g
 - [SmartPy Environment Setup Guide](#smartpy-environment-setup-guide)
   * [Introduction](#introduction)
   * [Table of Contents](#table-of-contents)
-  * [Create a codespace](#create-a-codespace)
-    + [Exiting your codespace](#exiting-your-codespace)
-    + [Reconnecting to your codespace](#reconnecting-to-your-codespace)
+  * [How to create a codespace](#how-to-create-a-codespace)
   * [Visual Studio Code](#visual-studio-code)
     + [The Command Palette](#the-command-palette)
+    + [Exiting your codespace](#exiting-your-codespace)
+    + [Reconnecting to your codespace](#reconnecting-to-your-codespace)
     + [The .devcontainer folder](#the-devcontainer-folder)
     + [How to use Codespaces with your local version of VS Code](#how-to-use-codespaces-with-your-local-version-of-vs-code)
     + [How to connect to your own fork of the tutorial repository](#how-to-connect-to-your-own-fork-of-the-tutorial-repository)
@@ -28,7 +28,7 @@ More advanced users may wish to continue through the advanced section of setup g
     + [Instructions](#instructions)
     + [Troubleshooting](#troubleshooting)
 
-## Create a codespace
+## How to create a codespace
 
 1. Create an account at github.com
 2. Navigate to https://github.com/grum-tez/smartPyDC
