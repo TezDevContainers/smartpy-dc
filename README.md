@@ -8,6 +8,8 @@ This purpose of this repo is to allow you to set up a working smartpy environmen
 2. Navigate to https://github.com/grum-tez/smartPyDC
 3. Click _Use this template_, then click _Open in a codespace_.
 
+![Image of github website with 'Use this Template' leading to a dropdown with 'Open in codespace'](images/useThisTemplate.png)
+
 This will clone a copy of the template repository to a remote server (a 'codespace'). When the codespace is created, an in-browser version of Visual Studio Code will provide you access to the repository.
 
 Your codespace should now be up and running. Everything you need to complete the tutorial, including smartpy, is pre-installed.
