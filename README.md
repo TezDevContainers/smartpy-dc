@@ -68,7 +68,7 @@ This is another shortcut worth remembering!
 
 When you are finished working in your codespace, you should close your connection before you exit VS Code. This will prevent wastage of your 60 hour quota of weekly free codespace time.
 
-To close your connection:
+**To close your connection:**
 
 1. If you are currently connected to a codespace, you will see this in the bottom left corner of your VS Code window:
 
@@ -90,7 +90,7 @@ With default settings, your codespace will automatically stop after 30 minutes o
 
 If you close you codespace part way through the tutorial and you want to get back to your work in progress, go to [https://github.com/codespaces](https://github.com/codespaces). After you sign in with your github account, will see your codespaces listed on this page. If you are new to codespaces, there will only be one item in the list.
 
-To reconnect:
+**To reconnect:**
 
 1. Click on the meatballs menu[*](https://twitter.com/MichaelBabich/status/608618153757802497) at the right hand side of your corresponding codespace.
 
@@ -124,7 +124,9 @@ On the other hand, if you are happy to work in the browser or don't want to inst
 
 ### How to connect to your own fork of the tutorial repository
 
-If you are familiar with using git and would like to add and commit your changes to a github repository, follow the instructions below. You can complete the Smartypy tutorial without creating your own fork - however be aware that by default your work in the codespace will be automatically deleted after 30 days of inactivity. 
+If you are familiar with using git and would like to add and commit your changes to a github repository, follow the instructions below. You can complete the Smartypy tutorial without creating your own fork - however be aware that by default your work in the codespace will be automatically deleted after 30 days of inactivity.
+
+**To connect to your own fork:**
 
 1. In the Activity Bar on the left hand side of the screen, click the Source Control view.
 
@@ -173,7 +175,6 @@ This might be a good option for you if:
 - Install [Docker Desktop](https://www.docker.com/products/docker-desktop/). 
   - If you are on 2021 or later Apple machine, you may have to select the "apple chip" download option. 
   - Make sure Docker is installed *and running*. If you restart your machine, you may have to remember to reopen it.
-
 
 - Install [Visual Studio Code](https://code.visualstudio.com/download). 
   - Make sure you are logged in with your github credentials. You can check by clicking on the icon of the portrait on the bottom left of the VS Code window.
