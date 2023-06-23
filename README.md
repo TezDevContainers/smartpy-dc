@@ -1,5 +1,26 @@
 # SmartPy Environment Setup Guide
 
+## Table of Contents
+
+- [SmartPy Environment Setup Guide](#smartpy-environment-setup-guide)
+  * [Table of Contents](#table-of-contents)
+  * [Introduction](#introduction)
+    + [Permissions and pop-ups](#permissions-and-pop-ups)
+  * [How to create a Codespace](#how-to-create-a-Codespace)
+  * [Orientation](#orientation)
+    + [The Command Palette](#the-command-palette)
+    + [The .devcontainer folder](#the-devcontainer-folder)
+    + [How to use Codespaces with your local version of VS Code](#how-to-use-codespaces-with-your-local-version-of-vs-code)
+    + [How to stop your Codespace](#how-to-stop-your-Codespace)
+    + [How to reconnect to your Codespace](#how-to-reconnect-to-your-codespace)
+    + [How to connect to your own fork of the tutorial repository](#how-to-connect-to-your-own-fork-of-the-tutorial-repository)
+    + [Next steps](#next-steps)
+  * [How to set up a local devcontainer (advanced)](#how-to-set-up-a-local-devcontainer--advanced-)
+    + [Prerequisites](#prerequisites)
+    + [Instructions](#instructions)
+    + [A note on performance for local devcontainers](#a-note-on-performance-for-local-devcontainers)
+  * [Troubleshooting](#troubleshooting)
+
 ## Introduction
 
 This readme will guide you through setting up a working smartPy environment with as little fuss as possible using modern development tools (devcontainers). Devcontainers promote easy sharing of code, reproduction of bugs, and a predictable development environment.
@@ -11,9 +32,9 @@ More advanced users may wish to continue through the advanced section of setup g
 
 ### Permissions and pop-ups
 
-Throughout this guide you may encounter pop-ups or detours asking you to grant permission for particular activities such as opening VS Code from the browser, installing extentions and authorising github access. These haven't been detailed in the guide as they differ between operating systems and your security settings. However, these are expected and you will have to provide appropriate access to complete the setup.
+Throughout this guide you may encounter pop-ups or detours asking you to grant permission for particular activities such as opening VS Code from the browser, installing extentions and authorising github access. These haven't been detailed in the guide as they will differ between users. However, these are expected and you will have to grant appropriate access to complete the guide.
 
-## How to create a codespace
+## How to create a Codespace
 
 1. Create an account at github.com
 2. Navigate to https://github.com/grum-tez/smartPyDC (this very page)
