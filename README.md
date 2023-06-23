@@ -9,29 +9,14 @@ We will first create a smartPy environment with Codespaces. Codespaces is a Micr
 For most readers, the setup will end here and they can skip to the smartPy tutorial.
 More advanced users may wish to continue through the advanced section of setup guide, which provides instructions for how to create a smartPy container and volume on your local machine.
 
-## Table of Contents
+### Permissions and pop-ups
 
-- [SmartPy Environment Setup Guide](#smartpy-environment-setup-guide)
-  * [Introduction](#introduction)
-  * [Table of Contents](#table-of-contents)
-  * [How to create a codespace](#how-to-create-a-codespace)
-  * [Orientation](#orientation)
-    + [The Command Palette](#the-command-palette)
-    + [Exiting your codespace](#exiting-your-codespace)
-    + [Reconnecting to your codespace](#reconnecting-to-your-codespace)
-    + [The .devcontainer folder](#the-devcontainer-folder)
-    + [How to use Codespaces with your local version of VS Code](#how-to-use-codespaces-with-your-local-version-of-vs-code)
-    + [How to connect to your own fork of the tutorial repository](#how-to-connect-to-your-own-fork-of-the-tutorial-repository)
-    + [Next steps](#next-steps)
-  * [How to set up a local devcontainer (advanced)](#how-to-set-up-a-local-devcontainer--advanced-)
-    + [Prerequisites](#prerequisites)
-    + [Instructions](#instructions)
-    + [Troubleshooting](#troubleshooting)
+Throughout this guide you may encounter pop-ups or detours asking you to grant permission for particular activities such as opening VS Code from the browser, installing extentions and authorising github access. These haven't been detailed in the guide as they differ between operating systems and your security settings. However, these are expected and you will have to provide appropriate access to complete the setup.
 
 ## How to create a codespace
 
 1. Create an account at github.com
-2. Navigate to https://github.com/grum-tez/smartPyDC
+2. Navigate to https://github.com/grum-tez/smartPyDC (this very page)
 3. Click _Use this template_, then click _Open in a codespace_.
 
 ![Partial screengrab of Github website with 'Use this Template' leading to a dropdown with 'Open in codespace'](images/useThisTemplate.png)
@@ -51,60 +36,25 @@ The Command Palette is a searchable menu that provides access to many commands i
 You will use the Command Palette often enough that it is well worth learning the keyboard shortcut!
 
 **Command Palette keyboard shortcuts:**
-Windows/Linux: Ctrl + Shift + P
-macOS: ⇧⌘P (Shift + Command + P)
+
+| Operating System | Shortcut                  |
+|------------------|---------------------------|
+| Windows/Linux    | Ctrl + Shift + P          |
+| macOS            | Shift + Command + P (⇧⌘P) |
+
 
 Try it out - search for "View: Toggle Terminal" in the command palette. Notice that the keyboard shortcut for *Toggle Terminal* appears alongside the command.
 
 ![A screengrab of the Command Palette Search Bar](images/commandPaletteSearch.png)
 
 **Toggle Terminal keyboard shortcuts:**
-Windows/Linux: Ctrl + \`
-macOS: ^\` (control + backtick)
+
+| Operating System | Shortcut                  |
+|------------------|---------------------------|
+| Windows/Linux    | Ctrl + \                  |
+| macOS            | Control + Backtick (^\`)  |
 
 This is another shortcut worth remembering!
-
-### Exiting your codespace
-
-When you are finished working in your codespace, you should close your connection before you exit VS Code. This will prevent wastage of your 60 hour quota of weekly free codespace time.
-
-**To close your connection:**
-
-1. If you are currently connected to a codespace, you will see this in the bottom left corner of your VS Code window:
-
-![A screengrab of the VS Code interface highlighting the 'Codespaces connected' tab](/images/CodespaceConnected.png)
-
-2. Click on the word 'codespaces'. This will open the command palette. Select "close remote connection"
-
-![A screengrab of the VS Code command palette highlighting the 'close remote connection' option](/images/closeRemoteConnection.png)
-
-3. If you now see only this at the bottom left of your VS Code window ... 
-
-![A screengrab of the VS Code interface highlighting that there is no current remote connection](/images/notConnected.png)
-
-... that means you have successfully disconnected from the remote.
-
-With default settings, your codespace will automatically stop after 30 minutes of inactivity. So if you forget to disconnect in the context of this tutorial, it won't be a big deal. However it is good to get into a habit of closing your codespace connection when you aren't using it.
-
-### Reconnecting to your codespace
-
-If you close you codespace part way through the tutorial and you want to get back to your work in progress, go to [https://github.com/codespaces](https://github.com/codespaces). After you sign in with your github account, will see your codespaces listed on this page. If you are new to codespaces, there will only be one item in the list.
-
-**To reconnect:**
-
-1. Click on the meatballs menu[*](https://twitter.com/MichaelBabich/status/608618153757802497) at the right hand side of your corresponding codespace.
-
-![A screengrab of the github codespaces web interface, showing a list of one item with basic information about a provisioned codespace](/images/codespace_list.png)
-
-2. Click 'Open in ...'
-
-![A screengrab of the github codespaces web interface, showing a menu with the option 'Open in ...' highlighted](/images/codespace_list_menu1.png)
-
-3. Click 'Open in browser'
-
-![A screengrab of the github codespaces web interface, showing a menu with the option 'Open in browser' highlighted](/images/codespace_list_menu2.png)
-
-This will return you to your codespace and work in progress.
 
 ### The .devcontainer folder
 
@@ -116,15 +66,67 @@ You will notice your workspace contains a single folder called ".devcontainer".
 
 ### How to use Codespaces with your local version of VS Code
 
-If you are familiar with VS Code and wish to use your natively-installed VS Code instead of an in-browser instance, open the command palette and select "Codespaces: Open in VS Code Desktop". 
+If you are familiar with VS Code and wish to use your natively-installed VS Code instead of an in-browser instance, open the command palette and select "Codespaces: Open in VS Code Desktop".
 
-![A screengrab of the command palette with an arrow indicating the "Open in VS Code Desktop option"](/images/openVS CodeDesktop.png)
+![A screengrab of the command palette with an arrow indicating the "Open in VS Code Desktop option"](/images/openVSCodeDesktop.png)
 
-On the other hand, if you are happy to work in the browser or don't want to install VS Code, you can safely skip this.
+You may be prompted to install the Codespaces extension. If so, accept.
+
+If you are happy to work in the browser or don't want to install VS Code, you can skip this section without disadvantage.
+
+### How to stop your Codespace
+
+When you are finished working in your codespace, you should stop your Codespace before you exit VS Code. This will prevent wastage of your 60 hour quota of weekly free Codespace time.
+
+1. If you are currently connected to a Codespace, you will see this in the bottom left corner of your VS Code window:
+
+![A screengrab of the VS Code interface highlighting the 'Codespaces connected' tab](/images/CodespaceConnected.png)
+
+2. Click on the word 'Codespaces'. This will open the command palette. Select "Stop Current Codespace".
+
+![A screengrab of the VS Code command palette highlighting the 'stop current codespace' option](/images/stopCodespace.png)
+
+3. Confirm you are disconnected
+
+_Codespace in local VS Code_:
+
+ If you now see only this at the bottom left of your VS Code window ... 
+
+![A screengrab of the VS Code interface highlighting that there is no current remote connection](/images/notConnected.png)
+
+... that means you have successfully stopped the remote, and have been disconnected
+
+_Codespace in Browser_:
+
+ You should see something like this:
+
+![A screengrab of a github webpage with the message "Codespace is stopped" and a button: "Restart codespace"](/images/codespaceStopped.png)
+
+With default settings, your codespace will automatically stop after 30 minutes of inactivity. So if you forget to stop in the context of the smartPy tutorial, it won't be a big deal. However, it is good to get into a habit of stopping a codespace when you aren't using it.
+
+### How to reconnect to your Codespace
+
+If you close your Codespace part way through the tutorial and you want to get back to your work in progress, go to [https://github.com/codespaces](https://github.com/codespaces). After you sign in with your github account, will see your codespaces listed on this page. If you are new to codespaces, there will only be one item in the list.
+
+**To reconnect:**
+
+1. Click on the meatballs[*](https://twitter.com/MichaelBabich/status/608618153757802497) menu (the three dots) at the right hand side of your corresponding codespace.
+
+![A screengrab of the github codespaces web interface, showing a list of one item with basic information about a provisioned codespace](/images/codespace_list.png)
+
+2. Click 'Open in ...'
+
+![A screengrab of the github codespaces web interface, showing a menu with the option 'Open in ...' highlighted](/images/codespace_list_menu1.png)
+
+3. Click 'Open in browser' or 'Open in VS Code' as you prefer
+
+![A screengrab of the github codespaces web interface, showing a menu with the option 'Open in browser' highlighted](/images/codespace_list_menu2.png)
+
+This will return you to your codespace and work in progress.
 
 ### How to connect to your own fork of the tutorial repository
 
-If you are familiar with using git and would like to add and commit your changes to a github repository, follow the instructions below. You can complete the Smartypy tutorial without creating your own fork - however be aware that by default your work in the codespace will be automatically deleted after 30 days of inactivity.
+If you are familiar with using git and would like to add and commit your changes to a github repository, follow the instructions below. You can complete the Smartypy tutorial without creating your own fork - however be aware that by default your work in the codespace will be automatically deleted after 30 days of inactivity. This section assumes familiarity with the [basics of git and github](https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/).
 
 **To connect to your own fork:**
 
@@ -132,7 +134,9 @@ If you are familiar with using git and would like to add and commit your changes
 
 ![A screengrab of the VS Code interface highlighting the source control view icon](/images/sourceControlView.png)
 
-2. A change was made to the folder as part of the devcontainer setup - the 'smartPy' script was downloaded. To stage this change, click the + symbol on the line next to the word changes (it appears when you mouseover the word *changes*)
+2. An automatic change has already been made to folder as part of the Codespace setup: the 'smartPy' script was downloaded. 
+
+To stage all changes, click the **+** symbol on the line next to the word *changes* (it will appear when you mouseover the word *changes*)
 
 ![A screengrab of the VS Code interface highlighting the 'add all changes' icon in the source control view](/images/addChange.png)
 
@@ -146,7 +150,7 @@ If you are familiar with using git and would like to add and commit your changes
 
 5. In the "Repository Name" dropdown, leave the default repo name as 'smartPyDC', and then select 'Publish to GitHub public repository'.
 
-![A screengrab of the VS Code command palette highlighting the 'Publish to GitHub public repository' option](/images/publishBranch.png)
+![A screengrab of the VS Code command palette highlighting the 'Publish to GitHub public repository' option](/images/publishPublic.png)
 
 ### Next steps
 
@@ -154,7 +158,7 @@ Whether or not you chose to continue in your browser or to set up a github fork,
 
 If you are a relative beginner to development, don't know what a container is, or are simply impatient to get started, we recommend moving directly on to the tutorial by following the link below:
 
-[Take me to the tutorial...]("https://www.lipsum.com/")
+[Take me to the tutorial...](https://www.lipsum.com/)
 
 ## How to set up a local devcontainer (advanced)
 
@@ -173,7 +177,7 @@ This might be a good option for you if:
 ### Prerequisites
 
 - Install [Docker Desktop](https://www.docker.com/products/docker-desktop/). 
-  - If you are on 2021 or later Apple machine, you may have to select the "apple chip" download option. 
+  - If you are on 2021 or later Apple machine, you may have to select the "apple chip" download option.
   - Make sure Docker is installed *and running*. If you restart your machine, you may have to remember to reopen it.
 
 - Install [Visual Studio Code](https://code.visualstudio.com/download). 
@@ -189,23 +193,7 @@ This might be a good option for you if:
 
 1. Open VS Code. If you are connected to a remote (e.g your codespace), close this connection first by following instructions in the [Exiting your codespace](#exiting-your-codespace) section.
 
-For example, if you are currently connected to a codespace, you will see this in the bottom left corner of your VS Code window:
-
-![A screengrab of the VS Code interface highlighting the 'Codespaces connected' tab](/images/CodespaceConnected.png)
-
-To close it, click on the word 'codespaces'. This will open the command palette. Select "close remote connection"
-
-![A screengrab of the VS Code command palette highlighting the 'close remote connection' option](/images/closeRemoteConnection.png)
-
-If you see only this at the bottom left of your VS Code window ... 
-
-![A screengrab of the VS Code interface highlighting that there is no current remote connection](/images/notConnected.png)
-
-... that means you are not connected to a remote and you can continue.
-
-Open the command palette and select "Clone Repository in Container Volume..."
-
-2. Select "Clone a repository from GitHub in a Container Volume..."
+2. Open the command palette and select "Clone Repository in Container Volume..."
 
 3. Select your fork of the smartPyDC repository.
 
@@ -213,9 +201,11 @@ Open the command palette and select "Clone Repository in Container Volume..."
 
 5. A VS Code window will open in a local container volume. 
 
-If this worked successfully, you will see this in the bottom left of your window:
+You will see this in the bottom left of your window:
 
 ![A screengrab of the VS Code interface highlighting a connection to 'Dev Container: SmartPy Tutorial'](/images/DevContainerConnected.png)
+
+The container may take a few minutes to build.
 
 - You now have a local container running with a local volume on your machine.
 - This volume will persist on your hard drive until you manually delete the container using docker.
@@ -223,13 +213,15 @@ If this worked successfully, you will see this in the bottom left of your window
 
 You are now ready to continue with the tutorial in your local container.
 
-Note: The option of a container combined with a local volume provides the best performance. This comes at the cost of an increased use of hard drive space. If you opt to use a container but without a local volume, you may find that commands such as `yarn install` perform poorly.
-
 You're done! You are ready to start the smartPy Tutorial
 
-[Take me to the tutorial...]("https://www.lipsum.com/")
+[Take me to the tutorial...](https://www.lipsum.com/)
 
-### Troubleshooting
+### A note on performance for local devcontainers
+
+The option of a container combined with a local volume provides the best performance. This comes at the cost of an increased use of hard drive space. If you opt to use a container but without a local volume (instructions not given here), you may find that commands such as `npm install` and `yarn install` perform poorly (slowly).
+
+## Troubleshooting
 
 - If you encounter issues where your devcontainer volume in VS Code won't open, try the following solution: reopen Docker Desktop, restart VS Code and try again.
 
@@ -238,5 +230,3 @@ You're done! You are ready to start the smartPy Tutorial
   2. Check that Docker Desktop is open, not just installed.
   3. Install the Docker extension for VS Code. Restart VS Code. Try again.
   4. Give up for now! Continue with the SmartPy tutorial using codespaces.
-
-  - If you closed you codespaces halfway through the tutorial, and you want to get back to it and the work you have already completed, go to [https://github.com/codespaces](https://github.com/codespaces). After you sign in with your github account, will see your codespace listed on this page.
