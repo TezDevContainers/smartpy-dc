@@ -5,9 +5,9 @@
     "ghcr.io/devcontainers/features/common-utils:2": {},
     "ghcr.io/devcontainers/features/docker-in-docker:2": {},
     "ghcr.io/devcontainers/features/node:1": {},
-    "ghcr.io/devcontainers/features/python:1": {},
+    "ghcr.io/devcontainers/features/python:1": {}
     },
   "postCreateCommand": "chmod +x .devcontainer/postCreate.sh && .devcontainer/postCreate.sh",
-  "onCreateCommand": "sudo apt-get update -y && sudo apt-get install software-properties-common -y && sudo add-apt-repository -y \"ppa:serokell/tezos\" && sudo apt-get update -ysudo apt-get install -y tezos-client",
+  "onCreateCommand": "sudo apt-get update -y && sudo apt-get install software-properties-common -y && sudo add-apt-repository -y \"ppa:serokell/tezos\" && sudo apt-get update -y sudo apt-get install -y tezos-client",
   "forwardPorts": [3000, 20000]
 }
