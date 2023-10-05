@@ -147,7 +147,7 @@ This will return you to your codespace and work in progress.
 
 ### How to connect to your own fork of the tutorial repository
 
-If you are familiar with using git and would like to add and commit your changes to a github repository, follow the instructions below. You can complete the SmartyPy tutorial without creating your own fork - however be aware that by default your work in the codespace will be automatically deleted after 30 days of inactivity. This section assumes familiarity with the [basics of git and github](https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/).
+If you are familiar with using git and would like to add and commit your changes to a github repository, follow the instructions below. You can complete the SmartPy tutorial without creating your own fork - however be aware that by default your work in the codespace will be automatically deleted after 30 days of inactivity. This section assumes familiarity with the [basics of git and github](https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/).
 
 **To connect to your own fork:**
 
