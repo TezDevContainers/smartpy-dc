@@ -179,7 +179,7 @@ Whether or not you chose to continue in your browser or to set up a github fork,
 
 If you are a relative beginner to development, don't know what a container is, or are simply impatient to get started, we recommend moving directly on to the tutorial by following the link below:
 
-[Take me to the tutorial...](https://www.lipsum.com/)
+[Take me to the tutorial...]([https://www.lipsum.com/](https://github.com/AxelRoffi/Tezos_smart_contracts_development_course/tree/main))
 
 ## How to set up a local devcontainer (advanced)
 
