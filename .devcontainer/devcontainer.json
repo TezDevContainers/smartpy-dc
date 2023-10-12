@@ -10,5 +10,6 @@
     
     },
   "postCreateCommand": "chmod +x .devcontainer/postCreate.sh && .devcontainer/postCreate.sh",
-  "forwardPorts": [3000, 20000]
+  "forwardPorts": [3000, 20000],
+  "runArgs": ["--init"]
 }
