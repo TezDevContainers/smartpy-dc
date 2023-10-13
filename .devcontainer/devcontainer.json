@@ -9,6 +9,7 @@
     "ghcr.io/grum-tez/features_template/octez-client-installer:1": {}
     
     },
-  "postCreateCommand": "chmod +x .devcontainer/postCreate.sh && .devcontainer/postCreate.sh",
-  "forwardPorts": [3000, 20000]
+  "postStartCommand": "chmod +x .devcontainer/postStart.sh && .devcontainer/postStart.sh",
+  "forwardPorts": [3000, 20000],
+  "runArgs": ["--init"]
 }
